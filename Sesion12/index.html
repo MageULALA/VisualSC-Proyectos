@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta cinematográfica</title>
+
+</head>
+
+<body>
+    <div id="Conetenedor">
+        <h2 style="color: darkblue ;" ><b>Encuesta de cine: Nominadas al Oscar 2021</b> </h2>
+        <form id="formulario1" name="formulario1" method="post" action="data.php">
+            <fieldset id="datos_personales" style="background-color:cornsilk;">
+                <legend><b>Datos Personales</b></legend>
+
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre"><br>
+
+                <label for="dni">DNI</label><br>
+                <input type="text" name="dni" id="dni" maxlength="8"><br>
+
+                <label for="edad">Edad</label><br>
+                <input type="text" name="edad" id="edad" maxlength="2"><br>
+                
+                <label for="sexo">Sexo</label></label><br>
+                <select type="text" name="lista_sexo" id="lista_sexo" style="width: 160px;">
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                </select>
+                
+
+            </fieldset><br>
+
+            <fieldset id="mejor_pelicula" style="background-color: cornsilk;">
+                <legend><b>Mejor Película</b></legend>
+            </fieldset><br>
+
+            <fieldset id="peliculas_novistas" style="background-color: cornsilk;">
+                <legend><b>Selecciona las películas que no hayas visto</b></legend>
+            </fieldset><br>
+
+            <fieldset id="argumento_pelifav" style="background-color: cornsilk;">
+                <legend><b>Argumento de la película que más te gusta</b></legend>
+                <textarea name="argumento" id="argumento" cols="150" rows="8"></textarea>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
