@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encuesta cinematográfica</title>
-
+    <title>Encuesta cinematográfica</font></title>
+    <link rel="icon" href="img/PremiosOscares.png">
 </head>
 
-<body>
-    <div id="Conetenedor">
-        <h2 style="color: darkblue ;" ><b>Encuesta de cine: Nominadas al Oscar 2021</b> </h2>
+<body >
+    <div id="Contenedor">
+        <h2 style="color: darkblue ; text-align: center; font-family: ObelixPro;" ><img src="img/rolloPelicula.png" alt="Rollo de película" title="Rollo de película" width="60" height="60"> Encuesta de cine: Nominadas al Oscar 2021<img src="img/PremiosOscares.png" title="Estatua de Oscar" alt="Estatua de Oscar" width="70" height="70"></h2>
         <form id="formulario1" name="formulario1" method="post" action="data.php">
-            <fieldset id="datos_personales" style="background-color:cornsilk;">
+            <fieldset id="datos_personales" style="background-color:rgb(190, 228, 241);">
                 <legend><b>Datos Personales</b></legend>
 
                 <label for="nombre">Nombre</label><br>
-                <input type="text" name="nombre" id="nombre"><br>
+                <input type="text" name="nombre" id="nombre" size="25" placeholder="Ingresa tu nombre"><br>
 
                 <label for="dni">DNI</label><br>
-                <input type="text" name="dni" id="dni" maxlength="8"><br>
+                <input type="text" name="dni" id="dni" maxlength="8" size="12" placeholder="Número de DNI"><br>
 
                 <label for="edad">Edad</label><br>
-                <input type="text" name="edad" id="edad" maxlength="2"><br>
+                <input type="text" name="edad" id="edad" maxlength="2" size="12"><br>
                 
                 <label for="sexo">Sexo</label></label><br>
-                <select type="text" name="lista_sexo" id="lista_sexo" style="width: 160px;">
+                <select type="text" name="lista_sexo" id="lista_sexo" style="width: 120px;">
                     <option value="femenino">Femenino</option>
                     <option value="masculino">Masculino</option>
                 </select>
@@ -33,19 +33,31 @@
 
             </fieldset><br>
 
-            <fieldset id="mejor_pelicula" style="background-color: cornsilk;">
+            <fieldset id="mejor_pelicula" style="background-color:rgb(190, 228, 241);">
                 <legend><b>Mejor Película</b></legend>
+                <input type="radio" name="pelicula" value="1"> Willy's Wonderland <br>
+                <input type="radio" name="pelicula" value="2"> Zombieland <br>
+                <input type="radio" name="pelicula" value="3"> Soy leyenda <br>
+                <input type="radio" name="pelicula" value="3"> Una aventura extraordinaria <br>
             </fieldset><br>
 
-            <fieldset id="peliculas_novistas" style="background-color: cornsilk;">
+            <fieldset id="peliculas_novistas" style="background-color:rgb(190, 228, 241);">
                 <legend><b>Selecciona las películas que no hayas visto</b></legend>
+                <input type="checkbox" name="peliculaNO" value="1"> Los increíbles 2 <br>
+                <input type="checkbox" name="peliculaNO" value="2"> Jumanji <br>
+                <input type="checkbox" name="peliculaNO" value="3"> Asu mare <br>
+                <input type="checkbox" name="peliculaNO" value="4"> Barbie Fairytopia <br>
+                <input type="checkbox" name="peliculaNO" value="5"> Cementerio general <br>
+                <input type="checkbox" name="peliculaNO" value="6"> Aj Zombies <br>
             </fieldset><br>
 
-            <fieldset id="argumento_pelifav" style="background-color: cornsilk;">
+            <fieldset id="argumento_pelifav" style="background-color:rgb(190, 228, 241);">
                 <legend><b>Argumento de la película que más te gusta</b></legend>
-                <textarea name="argumento" id="argumento" cols="150" rows="8"></textarea>
+                <textarea name="argumento" id="argumento" cols="120" rows="6" placeholder="Escribe sobre la película"></textarea>
             </fieldset>
+            <br>
+            <input type="reset" value="Borrar Formulario"> <input type="submit" value="ENVIAR"><br>
         </form>
-    </div>
+    </div><br>
 </body>
 </html>
