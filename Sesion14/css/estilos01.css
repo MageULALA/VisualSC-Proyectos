@@ -1,0 +1,22 @@
+/*
+tipo de letra o fomato a todos
+clases
+.externo{
+    color: green;
+}
+1| etiquetas simple
+2|clases y selectores de atributos
+3| ID
+*/
+
+/*
+Usas selectores de atributos para
+aplicar a ciertos objetos
+*/
+a[class="externo"]{
+    color: green;
+}
+
+
+
+
