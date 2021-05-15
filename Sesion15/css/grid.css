@@ -1,0 +1,45 @@
+/**/
+.grid{
+    /*inicializar el grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "head"
+    "menu main"
+    "foot foot"
+    ;
+}
+
+.a{
+    grid-area: head;
+    background-color: darkturquoise;
+}
+.b{
+    grid-area: menu;
+    background-color: olive;
+}
+.c{
+    grid-area: main;
+    background-color: red;
+}
+.d{
+    grid-area: foot;
+    background-color: salmon;
+}
+/*
+.a,.b,.c,.d{
+    border: 1px solid;    
+}
+VER LO DE REPET
+*/
+/*
+grid-template-area-->disposicion
+grid area-->
+*/
+
+
+
+
+
