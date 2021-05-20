@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    display: grid;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 20px auto;
+    /* grid-gap: 20px; agregar espacio entre cada elemento */
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 1fr 100px 100px 50px;
+    grid-template-areas: 
+    "header"
+    "contenido"
+    "sidebar"
+    "widget"
+    "footer"
+    ;
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer
+{
+    background: white;
+    padding: 20px;
+
+}
+
+.contenedor .header,
+.contenedor > div {
+    background: #00cccc;
+    color: black;
+
+}
+
+.contenido .header{
+    grid-area: header;
+}
+
+.contenedor .contenido{
+ grid-area: contenido;
+}
+
+.contenedor .sidebar{
+    background-color: #33ffff;
+    text-align: center;
+     grid-area: sidebar;
+}
+
+.contenedor .widget{
+    align-items: center;
+    grid-area: widget;
+}
+
+.contenedor .footer{
+    background: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    grid-area: footer;
+}
+
+@media(min-width:600px) and (max-width:1000px){
+    .contenedor{
+        display:grid;
+        margin: 0px auto;
+        max-width: 100%;
+        min-height: 100vh;
+        grid-template-columns: 300px 100px 150px;
+        grid-template-rows: 100px 50vh 100px 50px;
+        grid-template-areas: 
+        "header header header"
+        "contenido contenido sidebar"
+        "widget widget widget"
+        "footer footer footer";
+    }
+}
+
+@media(min-width: 1001px){
+    .contenedor{
+        display:grid;
+        margin: 0px auto;
+        max-width: 100%;
+        min-height: 100vh;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 150px 1fr 200px 100px;
+        grid-template-areas: 
+        "header header"
+        "contenido sidebar"
+        "wadget wadget wadget"
+        "footer footer footer";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

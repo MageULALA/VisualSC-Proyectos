@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.contenedor{
+    width: 100%;
+    max-width: 100%;
+    margin: 0px auto;
+    display: grid;
+    /* grid-gap: 20px; agregar espacio entre cada elemento */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: (4, auto)
+
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer
+{
+    background: white;
+    padding: 20px;
+}
+
+.contenedor .header{
+    padding: 0px;
+}
+
+.contenedor .header,
+.contenedor > div {
+    background: #00cccc;
+    color: black;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.contenedor .contenido{
+    grid-column: span 3;
+    margin-top: 20px;
+}
+
+.contenedor .sidebar{
+    padding: 80px;
+    grid-column: 4/5;
+    background-color: #33ffff;
+    text-align: center;
+    display: flex;
+    
+    justify-content: center;
+    width: 1fr;
+    min-height: 100px;
+}
+
+.contenedor .widget{
+    display: flex;
+    align-items: center;
+}
+
+.contenedor .footer{
+    background: black;
+    color: white;
+    grid-column: span 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mifoto{
+    height: 235px;
+    width: 190px;
+
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
+ img.img{
+    float: left;
+    width: 150px;
+    height: 120px;
+    margin: 10px;
+}
+
+.header h1{
+    position: absolute;
+    top: 0px;
+    left: 400px;
+    text-align: center;
+}
+.header h3{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    text-align: center;
+}
+div.contenedor table{
+    background: black;
+    text-align: center;
+    margin: 0px;
+    text-decoration: none;
+    color: white;
+    height: 50px;
+    width: 200px;
+
+}
+.td1{
+    margin: 10px;
+    padding: 10px;
+    border: white 0.01px solid;
+    color: white;
+}
+.td1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+header > h1{
+    
+    right: auto;
+}
+
+ div.menulateral, div.enlacesInteres{
+    border: #00cccc 0.5px solid;
+    padding: 40px ;
+    background: #00cccc;
+    width: 150px;
+    height: 150px;
+}
+div.enlacesInteres{
+    position: absolute;
+    top: 650px;
+    right: 80px;
+
+   }
+
+
+
+@media screen and (max-width: 768px) {
+    .contenedor .contenido{
+        grid-column: 1/-1;
+    }
+    .contenedor .sidebar{
+        grid-column: 1/-1;
+    }
+    .contenedor .widget{
+        grid-column: span 4;
+    }
+    #mifoto{
+        height: 120px;
+        width: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
