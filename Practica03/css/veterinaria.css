@@ -1,0 +1,137 @@
+body{
+    background-color: whitesmoke;
+    background-image:url(../img/fondoVet.jpg) ;
+}
+.grid {
+
+    margin: 0px auto;
+    max-width: 1000px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows:100px 50px 1fr 100px 50px;
+    grid-template-areas: "my-header " "my-nav ""my-section ""my-aside" "my-footer";
+    padding-top: 0px;
+}
+
+header {
+    grid-area: my-header;
+    color:666666;
+    text-align: initial;
+    background: white;
+
+}
+
+header h1{
+    font-size: 50px;
+    text-align: center;
+    font-family:"cooper";
+    color: #a89f99;
+    margin-bottom: 0px;
+    position: absolute;
+    top: 0px;
+    padding-left: 10px;
+}
+img.dog1{
+    float: right;
+    height: 230px;
+    width: 300px;
+    position: static;
+ margin-right: 100px;       
+}
+h2{
+    color: red;
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 120px;
+    padding-left: 10px;
+}
+nav {
+    grid-area: my-nav;
+    background-color: gray;
+    color:ivory;
+}
+
+.ul-vertical{
+    list-style: none;
+    line-height: 30px;
+}
+
+section {
+    grid-area: my-section;
+    background-color:ivory;
+    
+    border: 7px solid rebeccapurple;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+section div{
+    padding-right: 10px;
+    padding-left: 5px;
+}
+section div p{
+    text-align: left;
+}
+
+ div h3.texto {
+    text-align: center;
+}
+
+div  p.texto{
+    right: 0px;
+    text-align: justify;
+}
+div img.end, div img.jeri, div img.tije{
+    float: left;
+    height: 80PX;
+    width: 80px;
+    padding-right: 5px;
+}
+
+aside {
+    grid-area: my-aside;
+    background-color: darkmagenta;
+    color: white;
+    
+    justify-content: center;
+    padding-top: 30px;
+}
+
+footer {
+    grid-area: my-footer;
+    background-color: darkorchid;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    display: table;
+    color: ivory;
+    padding: 10px;
+}
+
+@media (min-width:600px) and (max-width:1000px){
+.grid{
+    grid-template-columns:30% 70%;
+    grid-template-rows:150px 50px 1fr 100px;
+    grid-template-areas: "my-header my-header " "my-nav my-nav" "my-aside my-section"  "my-footer my-footer";
+
+}
+}
+
+@media (min-width:1001px) {
+    .grid{
+        grid-template-columns:200px 1fr 200px;
+        grid-template-rows:200px 1fr 100px;
+        grid-template-areas: "my-header my-header  my-header "  "my-nav my-section my-aside" "my-footer my-footer my-footer";
+    
+    }
+
+
+}
+
+
+
+
+

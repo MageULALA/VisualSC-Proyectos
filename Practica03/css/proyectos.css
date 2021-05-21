@@ -352,12 +352,20 @@ div.widget .w1,
 
  #tablaProyectos{
     background: white;
-}
+     border-spacing: 50px 10px;
+     display: flex;
+     position:static;
+     right: 0px;
+ }
 
-.contenido td img.proyectoImg{
-    width: 180px;
-    height: 140px;
-}
+ #tablaProyectos > td {
+    margin: 50px;
+ }
+
+#proyectoImg{
+    width: 200px;
+    height: 150px;
+ }
 
 
 
