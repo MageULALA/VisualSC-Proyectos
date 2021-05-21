@@ -1,87 +1,54 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Personal</title>
-    <link rel="icon" href="img/icono.ico">
-    <link rel="stylesheet" href="css/estiloindex.css">
+    <link rel="stylesheet" href="css/estiloMejorado.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="div1">
-        <p style="text-align: end;"><a href="inicioSesion.html" style="color: black;">INICIAR SESIÓN</a></p>
-        <img src="img/mifoto2.jpg" alt="Autor" class="Mifoto">
-        <header>MARÍA EUGENIA NAVARRO MONJE</header>
-        <h1>My personal web</h1>
-        <div class="div2">
-            <table border="" class="tabla1">
-                <tbody>
-                    <tr>
-                        <td class="td1"><a href="index.html">Inicio</a></td>
-                        <td class="td1"><a href="curriculum.html">Currículum</a></td>
-                        <td class="td1"><a href="proyectos.html">Proyectos</a></td>
-                        <td class="td1"><a href="contactos.html">Contactos</a></td>
-                    </tr>
-                </tbody>
+    <div class="contenedor">    
+        <header class="header">
+            <p style="text-align: end;"><a href="inicioSesion.html" style="color: black;">Iniciar Sesión</a></p>
+            <table border="0.5px">
+                <tr>
+                    <td class="td1"><a href="index.html">Inicio</a></td>
+                </tr>
+                <tr>
+                    <td class="td1"><a href="curriculum.html">Currículum</a></td>
+                </tr>  
+                <tr>
+                    <td class="td1"><a href="proyectos.html">Proyectos</a></td> 
+                </tr>  
+                <tr>
+                    <td class="td1"><a href="contactos.html">Contactos</a></td>
+                </tr>
             </table>
-        </div>
-    </div>
-    <aside class="aside">
-        <table class="asideMenu">
-            <thead>
-                <tr>
-                    <th>Menú</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>INICIO</li>
-                            <li>CURRICULUM VITAE</li>
-                            <li>PROYECTOS</li>
-                            <li>CONTACTOS</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="asideEnlace">
-            <thead>
-                <tr>
-                    <th>Enlace de Interés</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>      
-    </aside>
-    <main>
-        <h2>NOTICIAS SOBRE TECNOLOGÍA</h2>
-        <article class="Noticia">
-            <h3>Impresión 3D y células musculares: la fórmula de los nuevos robots vivos</h3>
+            <img id="mifoto" src="img/mifoto2.jpg" alt="María Eugenia" title="María Eugenia">
+            <h1>MARÍA EUGENIA NAVARRO MONJE</h1>
+            <h3>Mi web personal</h3>
+        </header>
+        <main class="contenido">
+            <H1>ÚLTIMAS NOTICIAS</H1><br>
+            <h3>Impresión 3D y células musculares: la fórmula de los nuevos robots vivos</h3><br>
+            <img src="img/noticia1.jpg" alt="Noticia1" class="img">
             <p>
-                <img src="img/noticia1.jpg" alt="Noticia1" class="imgNoticia1">
+                
                 Un equipo del IBEC catalán desarrolla una generación de biobots con una estructura plástica, 800 veces más rápidos y con capacidad para entrenarse a sí mismos.
                 Un grupo de investigadores españoles del Instituto de Bioingeniería de Cataluña (IBEC) 
                 ha desarrollado una nueva generación de biobots (robots con una parte de su anatomía artificial y 
                 otra compuesta por células) con capacidad para auto-entrenarse, nadar y moverse 791 veces más rápido 
                 que la generación actual. Las futuras aplicaciones de estos robots pueden abrir numerosas puertas en 
                 campos como la administración de fármacos, el desarrollo de prótesis o en la limpieza medioambiental.
-            </p>
-            <h3>WhatsApp: qué pasa si no aceptas las nuevas condiciones de uso de la aplicación antes del 15 de mayo</h3>
+                Estos pequeños robots, de poco más de un centímetro de longitud, cuentan en su interior con un esqueleto fabricado con una impresora 3D. 
+                Este esqueleto, hecho con un polímero llamado PDMS, “es lo suficientemente débil como para poder apretarlo y a la vez elástico para que
+                 devuelva esa fuerza”, cuenta Samuel Sánchez, investigador ICREA en el IBEC y uno de los líderes del proyecto junto a María Giux. 
+                 Es la primera vez que se incluye una estructura de este tipo en un sistema vivo de robótica blanda.
+            </p><br><br>
+            <h3>WhatsApp: qué pasa si no aceptas las nuevas condiciones de uso de la aplicación antes del 15 de mayo</h3><br>
+            <img src="img/noticia2.jpg" alt="Noticia2" class="img">
             <p>
-                <img src="img/noticia2.jpg" alt="Noticia2" class="imgNoticia2">
                 WhatsApp fijó para este sábado el límite de tiempo que le da a sus millones de usuarios para que 
                 acepten los nuevos términos y condiciones de uso que causaron una oleada de críticas a la plataforma a comienzos de este año.
                 Con sus nuevos términos, la plataforma está pidiendo a sus usuarios 
@@ -91,51 +58,94 @@
                 A partir de este sábado, quienes no acepten la 
                 nueva actualización comenzarán a recibir mensajes persistentes recordándoles que deben aceptar los
                  nuevos términos.
-            </p>
-        </article>
-    </main>
-    <div class="div4">
-    <img src="img/mifoto2.jpg" alt="Autor" class="mifoto">
-    <table class="tabla3">
-        <thead>
-            <tr>
-                <th>Información de Contacto</th>
-                <th>Síguenos En</th>
-                <th>Enlaces de Interés</th>
-                <th>Menú</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><li>Instagram</li></td>
-                <td><li>Item 1</li></td>
-                <td><li>Item 1</li></td>
-                <td><li>Inicio</li></td>
-            </tr>
-            <tr>
-                <td><li>Google</li></td>
-               <td><li>Item 2</li></td>
-                <td><li>Item 2</li></td>
-                <td><li>Currículum</li></td>
-           </tr>
-           <tr>
-              <td><li>Facebook</li></td>
-               <td><li>Item 3</li></td>
-              <td><li>Item 3</li></td>
-               <td><li>Proyectos</li></td>
-            </tr>
-            <tr>
-                <td><li>Likedlin</li></td>
-                <td><li>Item 4</li></td>
-                <td><li>Item 4</li></td>
-                <td><li>Contactos</li></td>
-            </tr>
-        </tbody>
-    </table>
+                 "No se eliminará la cuenta de ningún usuario ni se quitará el acceso a las funciones de WhatsApp el 15 de mayo debido a esta actualización", dice la plataforma en su web
+            </p><br>
+            <br>
+            <h3>Las primeras imágenes tomadas por Zhurong, el robot de China que aterrizó en Marte</h3><br>
+            <img src="img/NoticiaMarte.jpg" alt="Noticia3" class="img">
+            <p>
+                China ha publicado las primeras imágenes después de que Zhurong, su robot explorador, aterrizara en Marte.
+                La vista frontal muestra el paisaje por delante del robot mientras se sitúa sobre su plataforma de aterrizaje. 
+                La imagen que mira hacia atrás revela los paneles solares de Zhurong.
+                Este robot explorador aterrizó en el planeta rojo el pasado domingo temprano según el horario local de Pekín.
+                China se convirtió así en el segundo país, tras Estados Unidos, en poner con éxito un robot en la superficie de Marte y utilizarlo durante un tiempo significativo.
+                Los científicos chinos esperan obtener al menos 90 días marcianos de servicio del robot de seis ruedas en su ubicación en Utopia Planitia, un vasto terreno en el hemisferio norte del planeta.
+                La Administración Espacial Nacional China (CNSA por sus siglas en inglés) publicó estas fotos en su página web.
+                Incluso hay un par de videos cortos sobre el momento en que el aeroshell del robot, la cápsula que usó para ingresar a la atmósfera marciana, sale del orbitador Tianwen-1, el satélite que transportó al robot desde la Tierra.
+            </p><br>
+        </main>
+        
+        <aside class="sidebar">
+            <div class="menulateral">
+               <P> Menú</P>
+                <ul>
+                    <li><a class="links" href="index.html">Inicio</a></li>
+                    <li><a class="links" href="curriculum.html">Curriculum</a></li>
+                    <li><a class="links" href="proyectos.html">Proyectos</a></li>
+                    <li><a class="links" href="contactanos.html">Contáctanos</a></li>
+                </ul>
+            </div><br>
+            <div class="enlacesInteres">
+                <P> Enlaces de interés</P>
+                <ul>
+                    <li><a class="links" href="https://es.wix.com/blog/2021/01/tendencias-diseno-web">Tendencias Web</a></li>
+                    <li><a class="links" href="https://www.postgresql.org/docs/">Documentación PgsqlL</a></li>
+                    <li><a class="links" href="https://developers.google.com/sites/gadgets/site_gadgets">Google Gadgets</a></li>
+                    <li><a class="links" href="https://www.xataka.com/basics/mejores-emuladores-android-para-pc">Emuladores de Android</a></li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <div class="widget">
+            <img id="mifotoWidget" src="img/FotoW.jpg" alt="María Eugenia" title="María Eugenia">
+            <div class="w1">
+                <p>Información de contacto</p><br>
+                <ul>
+                    <li>Correo electrónico: lavacaloca23@correo.com</li>
+                    <li>Teléfono: +51 948621555</li>
+                    <li>Dirección: Calle los Monos #654 Urb. Pista</li>
+                </ul>
+            </div>
+
+            <div class="w2">
+                <p>Síguenos en</p><br>
+                <ul>
+                    <li><a class="links" href="https://es-la.facebook.com/mi.pagina.1">Facebook</a></li>
+                    <li><a class="links" href="https://www.instagram.com/bellaboutique_peru/">Instagram</a></li>
+                    <li><a class="links" href="https://pe.linkedin.com/jobs/administrador-de-base-de-datos-empleos?trk=homepage-jobseeker_recent-search&position=1&pageNum=0">Linkedin</a></li>
+                </ul>
+            </div>
+
+            <div class="w3">
+                <P> Enlaces de interés</P><br>
+                <ul>
+                    <li><a class="links" href="https://es.wix.com/blog/2021/01/tendencias-diseno-web">Tendencias Web</a></li>
+                    <li><a class="links" href="https://www.postgresql.org/docs/">Documentación PostgreSQL</a></li>
+                    <li><a class="links" href="https://developers.google.com/sites/gadgets/site_gadgets">Google Gadgets</a></li>
+                    <li><a class="links" href="https://www.xataka.com/basics/mejores-emuladores-android-para-pc">Emuladores de Android</a></li>
+                </ul>
+            </div>
+
+            <div class="w4">
+                <P> Menú</P><br>
+                 <ul>
+                     <li><a class="links" href="index.html">Inicio</a></li>
+                     <li><a class="links" href="curriculum.html">Curriculum</a></li>
+                     <li><a class="links" href="proyectos.html">Proyectos</a></li>
+                     <li><a class="links" href="contactanos.html">Contáctanos</a></li>
+                 </ul>
+             </div><br>
+
+        </div>
+
+        <footer class="footer">
+            <h3>Webmaster: María Eugenia Navarro Monje</h3>
+        </footer>
     </div>
-    <footer class="footer">
-        <p class="textowebmaster">
-            Webmaster: María Eugenia Navarro Monje</p>
-    </footer>
 </body>
 </html>
+
+
+
+

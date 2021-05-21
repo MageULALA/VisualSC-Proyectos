@@ -29,6 +29,7 @@ body{
 {
     background: white;
     padding: 20px;
+
 }
 
 .contenedor .header{
@@ -39,47 +40,63 @@ body{
 .contenedor > div {
     background: #00cccc;
     color: black;
-    grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column: 1/-1;
 }
 
 .contenedor .contenido{
-    grid-column: span 3;
+    grid-column: span 2;
     margin-top: 20px;
+    grid-column: 1/-1;
 }
 
 .contenedor .sidebar{
     padding: 80px;
-    grid-column: 4/5;
+
     background-color: #33ffff;
     text-align: center;
     display: flex;
-    
     justify-content: center;
     width: 1fr;
     min-height: 100px;
+    display: table;
+    padding: 40px;
+    grid-column: 1/-1;
 }
+
+div.menulateral, div.enlacesInteres{
+    border: #00cccc 0.5px solid;
+    padding: 40px ;
+    background: #00cccc;
+    width: 150px;
+    height: 150px;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
 
 .contenedor .widget{
     display: flex;
     align-items: center;
+    grid-column: span 2;
 }
 
 .contenedor .footer{
     background: black;
     color: white;
-    grid-column: span 4;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #mifoto{
-    height: 235px;
-    width: 190px;
-
+    height: 120px;
+    width: 100px;
     position: absolute;
-    top: 0px;
-    left: 200px;
+    top: 55px;
+    left: 250px;
 }
  img.img{
     float: left;
@@ -91,15 +108,18 @@ body{
 .header h1{
     position: absolute;
     top: 0px;
-    left: 400px;
+    left: 160px;
     text-align: center;
+    font-size: 20px;
 }
 .header h3{
     position: absolute;
-    top: 100px;
-    left: 400px;
+    top: 40px;
+    left: 240px;
     text-align: center;
+    font-size: 1rem;
 }
+
 div.contenedor table{
     background: black;
     text-align: center;
@@ -107,19 +127,19 @@ div.contenedor table{
     text-decoration: none;
     color: white;
     height: 50px;
-    width: 200px;
+    width: 150px;
 
 }
 .td1{
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     border: white 0.01px solid;
     color: white;
 }
 .td1 a{
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 header > h1{
@@ -127,37 +147,189 @@ header > h1{
     right: auto;
 }
 
- div.menulateral, div.enlacesInteres{
-    border: #00cccc 0.5px solid;
-    padding: 40px ;
-    background: #00cccc;
-    width: 150px;
-    height: 150px;
-}
-div.enlacesInteres{
-    position: absolute;
-    top: 650px;
-    right: 80px;
 
-   }
-
-
-
-@media screen and (max-width: 768px) {
+@media (min-width: 600px) and (max-width:1000px) {
     .contenedor .contenido{
         grid-column: 1/-1;
     }
     .contenedor .sidebar{
-        grid-column: 1/-1;
+    grid-column: 1/-1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 1fr;
+    min-height: 100px;
+    display: table;
+    padding: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    }
+    div.menulateral, div.enlacesInteres{
+        border: #00cccc 0.5px solid;
+        padding: 30px ;
+        background: #00cccc;
+        width: 180px;
+        height: 150px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    .contenedor .widget{
+        grid-column: span 4;
+    }
+
+    .contenedor .footer{
+        grid-column: span 5
+    }
+    #mifoto{
+        position: absolute;
+        top: 6px;
+        left: 150px;
+        height: 165px;
+        width: 135px;
+        
+    }
+    .header h1{
+        position:absolute;
+        top: 70px;
+        left: 300px;
+        text-align: left;
+        font-size: 20px;
+        align-items: center;
+    }
+    
+}
+@media screen and (min-width: 1001px) {
+    .contenedor .contenido{
+        grid-column: 1/4;
+        grid-row: 2/5;
+        text-align: justify;
+    }
+    .contenedor .sidebar{
+        align-items: center;
+        grid-column: 4/5;
+        grid-row: 2/5;
+        display: table-cell;
+        vertical-align:middle;
+
+        padding: 60px;;
+        
     }
     .contenedor .widget{
         grid-column: span 4;
     }
-    #mifoto{
-        height: 120px;
-        width: 100px;
+
+    div.contenedor table{
+        height: 150px;
+        width: 200px;
+    
     }
-}
+    .td1{
+        margin: 10px;
+        padding: 10px;
+    }
+    .contenedor .footer{
+        grid-column-start: 1;
+        grid-column-end: 5;
+      }
+
+    div.menulateral, div.enlacesInteres{
+        border: #00cccc 0.5px solid;
+        padding: 40px ;
+        margin: 40px;
+        background: #00cccc;
+        width: 150px;
+        height: 150px;
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 18px;
+        }
+    
+        .header h1{
+                position:absolute;
+                top: 60px;
+                left: 380px;
+                text-align: left;
+                font-size: 3rem;
+                align-items: center;
+                font-weight: bolder;
+         }
+
+
+         .header h3{
+            position: absolute;
+            top: 120px;
+            left: 965px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: lighter;
+        }
+        .header p{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-weight: bolder;
+        }
+        .header p a{
+            text-decoration: none;
+        }
+        .menulateral p, .enlacesInteres p{
+            font-weight: bolder;
+        }
+        .menulateral ul{
+            text-align: left;
+        }
+
+        a.links{
+            text-decoration: none;
+            color: black;
+        }
+
+        #mifoto{
+       
+            height: 213px;
+            width: 160px;
+    
+        position: absolute;
+        top: 0px;
+        left: 200px;
+        }
+
+        #mifotoWidget{
+            height: 190px;
+            width: 140px;
+
+ 
+        }
+
+        div.widget .w1,
+        div.widget .w2,
+        div.widget .w3,
+        div.widget .w4 {
+        display: inline-block;
+        padding: 20px ;
+        margin: 30px;
+        width: 800px;
+        height: 150px;
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 16px;
+
+        }
+
+        .widget div p{
+            font-weight: bolder;
+        }
+
+    }
+
+
+
+
+    
+
+
 
 
 
