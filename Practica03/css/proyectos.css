@@ -146,6 +146,7 @@ header > h1{
     
     right: auto;
 }
+
 .footer h3{
     text-align: center;
     font-size: 1rem;
@@ -155,9 +156,11 @@ header > h1{
 #mifotoWidget{
     height: 190px;
     width: 140px;
+
+
 }
 
-    div.widget .w1,
+div.widget .w1,
         div.widget .w2,
         div.widget .w3,
         div.widget .w4 {
@@ -347,36 +350,17 @@ header > h1{
 
     }
 
-.contenido h2{
-    color: blue;
-    font-style: italic;
-}
-
-#contenidoCurriculum{
+ #tablaProyectos{
     background: white;
-    color: black;
-    width: 800px;
-	height: 150px;
-    border-collapse: separate;
-    border-spacing: 0;
-    padding: 0.8em;
 }
 
-#contenidoCurriculum thead{
-    font-weight: bold;
-    padding: 0.8em;
-    align-items: center;
-}
-#contenidoCurriculum th, 
-#contenidoCurriculum td{
-    text-align: left;
-    vertical-align: top;
-    border:1px black  solid;
+.contenido td img.proyectoImg{
+    width: 180px;
+    height: 140px;
 }
 
-.contenido ul {
-    list-style: none;
-}
+
+
 
 
 

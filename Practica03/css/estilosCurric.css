@@ -1,0 +1,66 @@
+body{
+    background-color:#c0e2f4;
+    margin: 0;
+    font-family: tahoma;
+    font-weight: normal;
+}
+
+#cabecera{
+    background-color: #3c5dae;
+    color: yellow;
+    font-family: arial black;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 ;
+}
+
+div.links{
+    background-color: black;
+    text-align: right;
+}
+div.presentacion{
+    background-color: #3c5dae;
+    color:yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+a{
+    color: white;
+}
+
+img{
+    width: 150px;
+}
+
+.textoResaltado{
+ font-style: oblique;
+ font-weight: bold;
+}
+
+div.subtitulos h2{
+    background-color: #3c5dae;
+    color:yellow;
+    font-family: "Broadway";
+}
+
+ul li span {
+    color: blue;
+    font-weight: bold;
+}
+
+table thead{
+    color: red;
+}
+
+ul{
+    list-style-type: square;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+

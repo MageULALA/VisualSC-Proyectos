@@ -1,0 +1,34 @@
+#general{
+    align-items: center;
+    border: 1px solid;
+    width: 500px;
+    background-color: rgb(236, 190, 138); 
+    position: absolute;
+    top:10%;
+    justify-content: center;
+    padding: 20px;
+    margin-left:30%
+
+}
+div h1{
+    margin: 10px;
+    text-align: center;
+}
+
+#cuadros{
+    line-height: 30pt;
+    text-align: center;
+}
+div p{
+    text-indent: 20pt;
+}
+p.o_registrar{
+    text-align: center;
+    text-indent: 0pt;
+}
+
+
+
+
+
+
