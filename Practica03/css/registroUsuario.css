@@ -2,7 +2,7 @@
     align-items: center;
     border: 1px solid;
     width: 500px;
-    background-color: rgb(236, 190, 138); 
+    background-color: #ceffff; 
     position: absolute;
     top:10%;
     justify-content: center;
@@ -27,7 +27,18 @@ p.o_registrar{
     text-indent: 0pt;
 }
 
+button.boton{
+   background: #034af1;
+   padding: 5px;
+   margin: 10px;
+   color: white;
+}
 
+div.botones{
+    float:none;
+	text-align:center;
+
+}
 
 
 
