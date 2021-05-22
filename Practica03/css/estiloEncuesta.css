@@ -1,0 +1,21 @@
+body{
+    padding: 40px;
+    padding-top: 20px;
+}
+
+#Contenedor{
+float:right;
+background: #1e99c9;
+right: 80px;
+width: 40%;
+}
+#imggrande{
+    height: 800px
+}
+fieldset legend{
+    background: blue;
+}
+
+
+
+

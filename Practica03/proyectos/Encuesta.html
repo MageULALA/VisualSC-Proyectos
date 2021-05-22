@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estiloEncuesta.css">
     <title>Encuesta cinematográfica</title>
     <link rel="icon" href="img/PremiosOscares.png">
 </head>
 
 <body >
+    <h2 style="color: darkblue ; text-align: center; font-family: ObelixPro;" > Encuesta de cine: Nominadas al Oscar 2021</h2>
     <div id="Contenedor">
-        <h2 style="color: darkblue ; text-align: center; font-family: ObelixPro;" ><img src="img/rolloPelicula.png" alt="Rollo de película" title="Rollo de película" width="60" height="60"> Encuesta de cine: Nominadas al Oscar 2021<img src="img/PremiosOscares.png" title="Estatua de Oscar" alt="Estatua de Oscar" width="70" height="70"></h2>
+        
         <form id="formulario1" name="formulario1" method="post" action="data.php">
-            <fieldset id="datos_personales" style="background-color:rgb(190, 228, 241);">
+            <fieldset id="datos_personales" >
                 <legend><b>Datos Personales</b></legend>
 
-                <label for="nombre">Nombre</label><br>
+                <p>Nombre:<label for="nombre"></label></p>
                 <input type="text" name="nombre" id="nombre" size="25" placeholder="Ingresa tu nombre"><br>
 
                 <label for="dni">DNI</label><br>
@@ -33,7 +35,7 @@
 
             </fieldset><br>
 
-            <fieldset id="mejor_pelicula" style="background-color:rgb(190, 228, 241);">
+            <fieldset id="mejor_pelicula" >
                 <legend><b>Mejor Película</b></legend>
                 <input type="radio" name="pelicula" value="1"> Willy's Wonderland <br>
                 <input type="radio" name="pelicula" value="2"> Zombieland <br>
@@ -41,7 +43,7 @@
                 <input type="radio" name="pelicula" value="3"> Una aventura extraordinaria <br>
             </fieldset><br>
 
-            <fieldset id="peliculas_novistas" style="background-color:rgb(190, 228, 241);">
+            <fieldset id="peliculas_novistas">
                 <legend><b>Selecciona las películas que no hayas visto</b></legend>
                 <input type="checkbox" name="peliculaNO" value="1"> Los increíbles 2 <br>
                 <input type="checkbox" name="peliculaNO" value="2"> Jumanji <br>
@@ -51,13 +53,16 @@
                 <input type="checkbox" name="peliculaNO" value="6"> Aj Zombies <br>
             </fieldset><br>
 
-            <fieldset id="argumento_pelifav" style="background-color:rgb(190, 228, 241);">
+            <fieldset id="argumento_pelifav" >
                 <legend><b>Argumento de la película que más te gusta</b></legend>
-                <textarea name="argumento" id="argumento" cols="120" rows="6" placeholder="Escribe sobre la película"></textarea>
+                <textarea name="argumento" id="argumento" cols="40" rows="6" placeholder="Escribe sobre la película"></textarea>
             </fieldset>
             <br>
             <input type="reset" value="Borrar Formulario"> <input type="submit" value="ENVIAR"><br>
         </form>
-    </div><br>
+    </div>
+    <div id=figura>
+        <img id="imggrande" src="../img/PremiosOscares.png" alt="PremioOscar">
+    </div>
 </body>
 </html>
