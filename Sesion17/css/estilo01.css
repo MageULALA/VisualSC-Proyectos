@@ -1,0 +1,19 @@
+
+#cont1{
+    width: 10%;
+    background: cadetblue;
+    border: darkblue solid 2px;
+    border-style: dashed;
+}
+
+#bt1{
+    background: white;
+    border-color: black;
+    color: red;
+}
+
+#cont1 li{
+    list-style: none;
+}
+
+
