@@ -1,0 +1,23 @@
+<!--REALIZAR UNA VERSION 3 DE AGENDA, AGREGAR UN CAMPO MAS-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="datoscontacto">
+        <label >Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+        <label >Num celular</label>
+        <input type="text" name="movil" id="movil" placeholder="Ingresa tu num de celular">
+        <input type="button" onclick="guardardatos()" value="Guardar datos">
+        <p id="datos">Pulsa para ver tu nombre y numero de celular</p>
+        <input type="button" onclick="recuperardatos()" value="Recuperar datos"><br>
+    </div>
+    <script type="text/javascript" src="js/manejoStorage.js"></script>
+    </body>
+</html>
