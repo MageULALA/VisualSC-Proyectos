@@ -1,0 +1,20 @@
+
+div:hover{
+    background-color: yellow;
+}
+
+a:hover{
+    color: red;
+}
+
+a:focus{
+    /* solo para selectores <a>
+    Hay pseudoclases que funcionan con determinadas
+    etiquetas*/
+    color:green;
+}
+
+a:active{
+    color: hotpink;
+}
+
