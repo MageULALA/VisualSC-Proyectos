@@ -1,0 +1,74 @@
+div{
+    background: #8e44ad;
+    color: white;
+    padding: .2rem .3rem 1rem .3rem;
+    position: absolute;
+    border-radius: 2rem 2rem 0 0;
+    animation-name: animar;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animar{
+    0%{
+        left: 0;
+        top: 0;
+    }
+
+    10%{
+        left: 14rem;
+        top: 0rem;
+        color: #9b59b6;
+    }
+    20%{
+        left: 14rem;
+        top: 0rem;
+        color: #9b59b6;
+    }
+    25%{
+        top: 7rem;
+        left: 14rem;
+        color: white;
+    }
+    30%{
+        top: 7rem;
+        left: 14rem;
+        color: white;
+    }
+    35%{
+        top:7rem;
+        left: 23rem;
+        color: #9b59b6;
+    }
+    40%{
+        top: 14rem;
+        left: 23rem;
+        color: white;
+    }
+    /*largo hacia abajo*/
+    45%{
+        top: 30rem;
+        left: 23rem;
+        color: #9b59b6;
+    }
+    75%{
+        top: 30rem;
+        left: 23rem;
+        color: #9b59b6;
+    }
+    80%{
+        top: 30rem;
+        left: 8rem;
+        color: #9b59b6;
+    }
+    85%{
+        top: 25rem;
+        left: 23rem;
+        color: #9b59b6;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+}
+

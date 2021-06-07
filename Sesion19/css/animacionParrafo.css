@@ -1,0 +1,45 @@
+body{
+    overflow: hidden; /*desaparecer la barra*/
+}
+
+/* prefijo animation-->solo para keyframe*/
+p{
+    animation-name: slidein;
+    /*
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-direction: alternate; */
+    animation: 5s infinite alternate slidein;
+}
+
+@keyframes slidein{
+    /*
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+    */
+    0%{
+        margin-left: 100%;
+        width: 300%;
+    }
+    30%{
+        background-color: coral;
+    }
+    60%{
+        background-color: crimson;
+    }
+    90%{
+        background-color: cyan;
+    }
+    100%{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+}
+
