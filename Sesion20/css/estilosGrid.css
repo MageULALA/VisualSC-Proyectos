@@ -1,0 +1,13 @@
+.row{
+    padding: 20px;
+    background-color: coral;
+}
+
+div[class^="col"]{
+    background-color: cornsilk;
+    border: solid black 1px;
+    /*text-align: center;*/
+    padding: 10px;
+}
+
+
