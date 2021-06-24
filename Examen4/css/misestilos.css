@@ -1,0 +1,110 @@
+
+body{
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    margin: 0%;
+    grid-gap: 0%;
+  }
+
+#menu{
+
+margin-left:30%;
+margin-right: 0%;
+width: 40%;
+background: #ffdd00;
+font-weight: bold;
+
+
+}
+
+#ubicacion{
+    width: 80%;
+}
+
+#footer{
+    text-align: center;
+
+}
+
+#navbar{
+    background-color: #00a160;
+}
+
+#navmenu{
+    padding: 0%; 
+    padding-bottom: 5%;
+ 
+}
+
+#dere{
+margin-left: 50%;
+}
+  li{
+    list-style: none;
+    padding: 10px;
+    top: 20px;
+    position: relative;
+}
+
+#cabecera{
+    margin: 0%;
+
+}
+
+#carrito{
+    margin-bottom: 10px;
+}
+
+/**/
+
+ #TAY{
+    color: #000000;
+    font-size: 5rem;
+    text-align: center;
+    padding: 10%;
+}
+
+#logotexto{
+    padding: 0px;
+}
+
+#nav{
+    grid-gap: 0%;
+}
+
+#nav{
+    padding: 0%;
+}
+
+#arriba-derecha{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#abajo{
+    display: flex;
+    text-align: center;
+
+}
+
+
+#fila{
+    margin: 3%;
+}
+
+#item{
+
+    margin: 5px;
+    border: 0.5px solid #000 ;
+    border-radius: 10px;
+}
+
+#aimg{
+    width:150;
+    height: 220px;
+}
+
+
+
+
