@@ -9,6 +9,7 @@ p{
     animation-duration: 3s; 
     animation-iteration-count: infinite; 
     animation-direction: alternate; */
+    animation-name: slidein;
     animation: 5s infinite alternate slidein;
 }
 

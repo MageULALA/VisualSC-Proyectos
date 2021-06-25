@@ -39,64 +39,6 @@
     top: -50%;
 }
 
-.cuadrado{
-    width: 100px;
-    height: 100px;
-    background-color: brown;
-    margin-left: 20px;
-}
-
-.rombo{
-    width: 100px;
-    height: 100px;
-    background-color: cornflowerblue;
-    margin-left: 20px;
-    transform: rotate(40deg);
-}
-
-.paralelogramo{
-    width: 170px;
-    height: 100px;
-    background-color: #f0471c;
-    margin-left: 20px;
-    transform: skew(20deg);
-}
-
-.triangulo{
-    width: 0px;
-    height: 0px;
-    border-left: 50px solid #ffd764;
-    border-right: 50px solid transparent;
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid #ffd764;
-}
-
-.circulo1{
-    width: 100px;
-    height: 100px;
-    background-color: darkblue;
-    border-radius: 50%;
-}
-
-.circulo2{
-    width: 0px;
-    height: 0px;
-    background-color: darkblue;
-    border-radius: 50%;
-    border-left: 50px solid #ffd764;
-    border-right: 50px solid #028002;
-    border-top: 50px solid #23a9f2;
-    border-bottom: 50px solid #e31c24
-}
-
-.diamante{
-    width: 100px;
-    height: 100px;
-    background-color: brown;
-    margin-left: 20px;
-    clip-path: polygon(25% 0, 75% 0, 100% 25%, 50% 100%, 0 25% );
-}
-
 
 
 
