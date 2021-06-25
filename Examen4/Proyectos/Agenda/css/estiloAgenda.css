@@ -1,0 +1,45 @@
+
+body{
+      background-color:  url(../img/contactos.jpg) center no-repeat;
+    padding-left: 10px;
+    padding-top: 2%;
+    font-family: calibri;
+}
+.principal{
+    color : white;
+    margin: 12.5% auto;
+    background-color: rgb(235, 139, 50);
+    border: 20px dashed rgb(247, 173, 104);
+    margin-top: 1%;
+}
+.form-control{
+    background-color: white;
+   
+}
+.form-control:focus{
+    background-color: #fddffd;
+    outline:none;
+    box-shadow: 0 0 0 2px #F3F0D7;
+}
+
+.form-control::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #d1d1d1;
+}
+.form-control:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: rgb(235, 139, 50);
+    opacity: 1;
+}
+.form-control::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: rgb(235, 139, 50);
+    opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(235, 139, 50);
+}
+
+
+
