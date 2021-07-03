@@ -24,7 +24,7 @@
 
     <main>
         
-	
+         <!--PRESENTACION FIMLBOS + PELICULA PRINCIPAL--->
             <div class="pelicula-principal">
                 <div class="contenedor">
                     <img class="logotipoGRANDE" src="img/logoFilm.png" alt="">
@@ -39,10 +39,190 @@
                     <button role="button" class="boton"><i class="far fa-eye"></i>VER PLANES</button>
                 </div>
             </div>
-   
+             
+            <!--CARROUSEL--->
+
+                        
+            <div class="peliculas-recomendadas contenedor">
+                <div class="contenedor-titulo-controles">
+                    <h3>PELÍCULAS, SERIES Y MÁS</h3> 
+                    <div class="indicadores"></div>
+                </div>
+    
+                <div class="contenedor-principal">
+                    <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+    
+                    <div class="contenedor-carousel">
+                        <div class="carousel">
+                            <div class="pelicula">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#example" onclick="modalRespuesta()"><img src="img/carruselPrincipal/1.jpg" alt=""></a>
+                            </div>
+                            <div id="pelicula" class="pelicula">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#example" onclick="modalRespuesta()"><img src="img/carruselPrincipal/2.jpg" alt=""></a>
+                            </div>
+                            <div id="pelicula" class="pelicula">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#example" onclick="modalRespuesta()"><img src="img/carruselPrincipal/3.jpg" alt=""></a>
+                            </div>
+                            <div id="pelicula" class="pelicula">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#example" onclick="modalRespuesta()"><img src="img/carruselPrincipal/4.jpg" alt=""></a>
+                            </div>
+                            <div id="pelicula" class="pelicula">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#example" onclick="modalRespuesta()"><img src="img/carruselPrincipal/5.jpg" alt=""></a>
+                            </div>
+                            <div id="pelicula" class="pelicula">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#example" onclick="modalRespuesta()"><img src="img/carruselPrincipal/6.jpg" alt=""></a>
+                            </div>
+                            <div id="pelicula" class="pelicula">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#example" onclick="modalRespuesta()"><img src="img/carruselPrincipal/7.jpg" alt=""></a>
+                            </div>
+                            <div id="pelicula" class="pelicula">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#example" onclick="modalRespuesta()"><img src="img/carruselPrincipal/1.jpg" alt=""></a>
+                            </div>
+                            <div id="pelicula" class="pelicula">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#example" onclick="modalRespuesta()"><img src="img/carruselPrincipal/2.jpg" alt=""></a>
+                            </div>
+                            <div id="pelicula" class="pelicula">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#example" onclick="modalRespuesta()"><img src="img/carruselPrincipal/3.jpg" alt=""></a>
+                            </div>
+                            <div id="pelicula" class="pelicula">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#example" onclick="modalRespuesta()"><img src="img/carruselPrincipal/4.jpg" alt=""></a>
+                            </div>
+                            <div id="pelicula" class="pelicula">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#example" onclick="modalRespuesta()"><img src="img/carruselPrincipal/5.jpg" alt=""></a>
+                            </div>
+                            <div id="pelicula" class="pelicula">
+                                <a href="#"data-bs-toggle="modal" data-bs-target="#example" onclick="modalRespuesta()"><img src="img/carruselPrincipal/6.jpg" alt=""></a>
+                            </div>
+                            <div id="pelicula" class="pelicula">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#example" onclick="modalRespuesta()"><img src="img/carruselPrincipal/9.jpg" alt=""></a>
+                            </div>
+                            <div id="pelicula" class="pelicula">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#example" onclick="modalRespuesta()"><img src="img/carruselPrincipal/8.jpg" alt=""></a>
+                            </div>                           
+                           
+                        </div>
+                    </div>
+    
+                    <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+                </div>
+			</div>
+
+            <!---MODAL-->
+            <div class="modal fade" id="example" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <img id="logoModal" src="img/logoFilm.png" alt="">
+                      <button id="close" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div id="Mo">¡Suscribete ahora para ver todo el contenido!</div>
+                      <div id="Mod"></div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="SuscribirsePaso1.html" type="button" class="boton_personalizado1" data-bs-dismiss="modal">Más tarde</a>
+                      <a href="SuscribirsePaso1.html" type="button" class="boton_personalizado2" data-bs-dismiss="modal">SUSCRIBIRME</a>                                        
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!---MODAL-->
+
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Molestias minus omnis, ullam pariatur aliquam cupiditate. Officia adipisci, 
+                    repellendus dolor voluptatibus assumenda velit. Assumenda architecto totam tenetur,
+                     molestiae minus in incidunt.</p>
+            </div>
+
 	</main>
+
+    
+    <footer class=" text-white text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-3">
+          <!--Grid row-->
+          <div class="row">
+                  
+            <!--Grid column-->
+            <div id="redes" class="col-lg-1 col-md-6 mb-8 mb-md-0">
+                
+                <ul class="list-unstyled mb-0">
+                  <li id="itemFooter">
+                    <a href="#!" class="text-white"><i class="fab fa-facebook fa-2x" style="color: #ff6600;"></i></a>
+                  </li ><br>
+                  <li id="itemFooter">
+                    <a href="#!" class="text-white"><i class="fab fa-instagram fa-2x" style="color: #ff6600;"></i></a>
+                  </li><br>
+                  <li id="itemFooter">
+                    <a href="#!" class="text-white"><i class="fab fa-twitter fa-2x" style="color: #ff6600;"></i></a>
+                  </li><br>
+                  <li id="itemFooter">
+                    <a href="#!" class="text-white"><i class="fab fa-youtube fa-2x" style="color: #ff6600;"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-8 mb-md-0">
+  
+              <ul class="list-unstyled mb-0">
+                <li id="itemFooter">
+                  <a href="#!" class="text-white">Ayuda</a>
+                </li><br>
+                <li id="itemFooter">
+                  <a href="#!" class="text-white">Preguntas frecuentes</a>
+                </li><br>
+                <li id="itemFooter">
+                  <a href="#!" class="text-white">Políticas de privacidad</a>
+                </li>
+                
+              </ul>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div id="fueraImgen" class="col-lg-7 col-md-12 mb-4 mb-md-0">
+                <div id="logoGrande">
+                    <img id="logoFooter" src="img/logoFilm.png" alt="">
+                </div>
+              </div>
+              <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-8 mb-md-0">
+             
+              <ul class="list-unstyled">
+                <li id="itemFooter">
+                  <a href="#!" class="text-white">Sobre FilmBox</a>
+                </li><br>
+    
+                <li id="itemFooter">
+                  <a href="#!" class="text-white">Acuerdo de suscripción</a>
+                </li><br>
+                <li id="itemFooter">
+                    <a href="#!" class="text-white">Avisos legales</a>
+                  </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div id="copy" class="text-center p-3" >
+          © 2021 Copyright: FILM BOX. Todos los derechos reservados.
+        </div>
+        <!-- Copyright -->
+      </footer>
 
     <script src="https://kit.fontawesome.com/33a0d02645.js" crossorigin="anonymous"></script>
     <script  src="js/bootstrap.min.js"></script>
+    <script src="js/carrouselPrincipal.js" ></script>
 </body>
 </html>

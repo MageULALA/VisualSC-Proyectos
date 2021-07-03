@@ -1,9 +1,10 @@
 * {
 	
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 }
 :root {
-	--rojo: #E50914;
+	--prin: #ff6600;
 	--fondo: #010418;
     --fuera: #020624;
 }
@@ -141,7 +142,7 @@ div .contenedor{
 
 .pelicula-principal .descripcion {
 	font-weight: normal;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	line-height: 1.75em;
     max-height: 15%;
 	margin: 0%;
@@ -153,14 +154,15 @@ div .contenedor{
 	background: rgba(0,0,0, 0.5);
 	border: none;
 	border-radius: 0.31em;
-	padding: 0.83em 1.80em;
+	padding: 0.80em 1.60em;
 	color: #fff;
 	margin-right: 1.25em;
     margin-top: 4px;
+	margin-bottom: 1%;
 	cursor: pointer;
 	transition: .3s ease all;
 	font-size: 0.8em;
-    font-weight: 1000;
+    font-weight: 800;
     align-content: center;
     justify-content: center;
     text-align: center;
@@ -183,5 +185,265 @@ div .contenedor{
 	margin-right: 1.25em;
 }
 
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+
+
+#imagenCarrusel{
+	height: 20em;
+	width: 10em;
+}
+
+@media (max-width: 400px) {
+    .carousel-inner .carousel-item > div {
+        display: block;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+/*CARROUSEL P*/
+.contenedor-titulo-controles {
+
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+.contenedor-titulo-controles h3 {
+	color: var(--prin);
+	
+	font-weight: 600;
+	font-size:1.80em;
+}
+
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: red;
+}
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+.peliculas-recomendadas {
+	margin-bottom: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.peliculas-recomendadas .contenedor-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+
+@media screen and (max-width: 800px) {
+	.peliculas-recomendadas .contenedor-carousel {
+		overflow: visible;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel .carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.peliculas-recomendadas .indicadores,
+	.peliculas-recomendadas .flecha-izquierda,
+	.peliculas-recomendadas .flecha-derecha {
+		display: none;
+	}
+}
+
+/* SUSCRIBIRSE EN PELICULA*/
+.modal-content{
+	align-items: center;
+	background: #010418b2;
+	text-align: center;
+	color: white;
+}
+
+.btn-close,
+.btn-close:hover,
+.btn-close:active {
+  color: white;
+  text-shadow: 0 -1px 0 white;
+  background-color: #04127a;
+  
+}
+
+.modal-header, .modal-footer, .modal-body{   
+    min-height: 1px;
+    padding: 0px;
+    margin: 2%;
+    margin-left: 0px auto;
+    margin-right: 0px auto;
+    margin-top: 0px auto;
+    margin-bottom: 0px auto;
+	align-content: center;
+    border: none;
+	color: white;
+}
+.modal-header{
+	margin-right: 18px;
+}
+
+#logoModal{
+	width: 35%;
+	margin-left: 32%;
+}
+
+.modal-backdrop.show {
+	opacity: .6;
+	filter: alpha(opacity=60); /* Para versiones anteriores de IE */
+	}
+
+
+/* BOTONES MODAL*/
+.boton_personalizado1, .boton_personalizado2 {
+    text-decoration: none;
+    padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #ff6600d5;
+    border-radius: 6px;
+	font-family: 'Open Sans', sans-serif;
+  }
+  .boton_personalizado1{
+	font-weight: 100;
+  }
+
+
+
+  /*FOOTER*/
+  #logoFooter{
+	  width: 60%;
+	  margin: 5%;
+	  align-content: center;
+	  text-align: center;
+	  align-items: center;
+	  padding-top: 8%;
+	  padding-right: 1%;
+	  padding-left: 18%;
+
+  }
+  #logoGrande{
+	  padding-right: 0%;
+  }
+
+  footer{
+	  background: var(--fuera);
+	  padding-top: 5%;
+	  padding-bottom: 5%;
+	  margin-top: 0px;
+	  margin-bottom: 0px;
+	  padding-top: 3%;
+	  padding-bottom: 1%;
+  }
+
+  #copy{
+	background: var(--fuera);
+	margin-top: 0%;
+  }
+
+  .text-white{
+
+	  font-size: 0.95em;
+	  
+  }
+
+ 
+  #itemFooter{
+	margin-top: 10%;
+	margin-bottom: 10%;
+
+}
+  
+#redes{
+
+	padding-right:0px ;
+	padding-left: 0px;
+	text-align: center;
+}
 
 
