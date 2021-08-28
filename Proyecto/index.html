@@ -7,16 +7,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilopropio.css">
-    <title>Document</title>
+    <link rel="icon" href="img/iconoF.png">
+    <title>FilmBox. Bienvenido</title>
 </head>
 <body>
+  <audio autoplay>
+    <source src="mp3mp4/rollo.mp3" type="audio/mpeg"> 
+    <source src="mp3mp4/rollo.wav" type="audio/mpeg"> 
+  </audio>
+
 
             <header>
                     <div class="contenedor">
                         <img class="logotipo" src="img/logoFilm.png" alt="">
                         <nav>
                             <button role="button" class="botonArriba"><i class="fas fa-globe"></i> ES</button>
-                                    <button role="button" class="botonArriba">INICIAR SESIÓN</button>
+                                    <button  type="submit"  onclick="location.href='login.html'" class="botonArriba">INICIAR SESIÓN</button>
             
                         </nav>
                     </div>
@@ -35,7 +41,7 @@
                     <p class="descripcion">
                         en todo lugar...
                     </p><br>
-                    <button role="button" class="boton">¡SUSCRIBIRME AHORA!</button><br>
+                    <button role="button" onclick="location.href='SuscribirsePaso1.html'" class="boton">¡SUSCRIBIRME AHORA!</button><br>
                     <button role="button" class="boton"><i class="far fa-eye"></i>VER PLANES</button>
                 </div>
             </div>
@@ -107,7 +113,7 @@
                 </div>
 			</div>
 
-            <!---MODAL-->
+      <!---MODAL-->
             <div class="modal fade" id="example" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
@@ -120,22 +126,68 @@
                       <div id="Mod"></div>
                     </div>
                     <div class="modal-footer">
-                      <a href="SuscribirsePaso1.html" type="button" class="boton_personalizado1" data-bs-dismiss="modal">Más tarde</a>
-                      <a href="SuscribirsePaso1.html" type="button" class="boton_personalizado2" data-bs-dismiss="modal">SUSCRIBIRME</a>                                        
+                      <a href="" type="button" class="boton_personalizado1" data-bs-dismiss="modal">Más tarde</a>
+                      <a onclick="location.href='SuscribirsePaso1.html'" type="button" class="boton_personalizado2" data-bs-dismiss="modal">SUSCRIBIRME</a>                                        
                       
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!---MODAL-->
+              <!---FIN MODAL-->
+              
 
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Molestias minus omnis, ullam pariatur aliquam cupiditate. Officia adipisci, 
-                    repellendus dolor voluptatibus assumenda velit. Assumenda architecto totam tenetur,
-                     molestiae minus in incidunt.</p>
+              <!---debajo carrousel-->
+              <div id="centro" class="row">
+                <div class="col-6">
+                  <span>DISPONIBLE EN TODOS TUS DIPOSITIVOS</span><br>
+
+                  <div id="cont_cen" >
+                    <i class="fas fa-tv"></i>
+                  <i class="fas fa-laptop"></i>
+                  <i class="fas fa-mobile"></i>
+                  <i class="fas fa-gamepad"></i>
+                  </div>
+                </div>
+               
+                <div  class="col-6">
+                  <span>AGREGA MUCHOS PERFILES</span>
+                  <div id="cont_cen" >
+                    <i class="fas fa-users"></i>
+                 
+                  </div>
+                </div>
+              </div>
+
+            <!---Línea-->
+            <div id="centro"  class="row">
+
+              <div class="col-12">
+                <button role="button" id="ultimo" class="boton" onclick="location.href='SuscribirsePaso1.html'">SUSCRIBIRME</button>
+
+              </div>
+              
             </div>
+            
+             <!---Línea-->
+             <div id="centro" class="row">
+              <div class="col-12">
+                <span>¡AHORA PUEDES COMPRAR!</span><br>
+                <p style="color: white;" >Compras, fáciles y seguras</p>
+
+                <div id="cont_cen" >
+                  <img id="carro" src="img/logoV1.png" alt="">
+                </div>
+
+                <button role="button" id="ultimo" class="boton" onclick="location.href='Shop.html'">COMPRAR AHORA</button>
+
+              </div>
+             
+             
+            </div>
+
+
+
 
 	</main>
 
@@ -216,7 +268,7 @@
       
         <!-- Copyright -->
         <div id="copy" class="text-center p-3" >
-          © 2021 Copyright: FILM BOX. Todos los derechos reservados.
+          © 2021 Copyright: FILM BOX. Todos los derechos reservados.{Última actualización:}
         </div>
         <!-- Copyright -->
       </footer>

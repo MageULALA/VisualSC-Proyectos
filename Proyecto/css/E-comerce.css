@@ -1,0 +1,156 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0;
+    /*background-color: #010418;*/
+    background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+.main-header{
+    padding: 0 20px;
+}
+.main-header_title{
+  text-align: center;
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: #ff6600;  
+}
+.main-nav{
+    display: none;
+}
+.main-header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-menu{
+    font-size: 1.5em;
+    border: 1px solid white;
+    display: block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    cursor: pointer;
+}
+.main-header_btn{
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: #ff6600;
+    text-decoration: none;
+}
+.main-header_input{
+    display: block;
+    padding: 10px;
+}
+
+
+/*carrusel*/
+}
+html, body{
+    height: 100%;
+}
+#cover{
+    background: #222 url(../img/814569.jpg) center no-repeat;
+    background-size: 10% ;
+    color: white;
+    background-color: #ff6600;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+#cover-texto{
+    width: 100%;
+}
+/*.carousel{
+margin: 50px 0;
+position: relative;
+}
+.carousel-inner{
+display: flex;
+width: 400%;
+height: 300px;
+margin-left: -100%;
+}
+.carousel-item{
+    width: 100%;
+}
+.d-block{
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+}*/
+.d-block{
+    float: left;
+    width: 350px;
+    height: 500px;
+    border-radius: 0;
+    margin: 0px 10px;
+}
+.carousel-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+.carousel-tittle{
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+}
+.carousel-txt{
+    margin: 5px 0;
+    
+}
+.carousel-btn{
+    display: block;
+    border: 1px solid  #ff6600;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    margin: 10px auto;
+    z-index: 999;
+}
+.carousel-inner{
+    position: relative;
+}
+.carousel-inner:before{
+content: "";
+position: absolute;
+z-index: 1;
+top: 0;
+left: 0;
+width: 100%s;
+background: rgba(0,0,0,0.5);
+height: 100%;
+}
+
+.main{
+    padding: 0 20px;
+}
+/*Estilos de productos*/
+.cotainer-products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.product{
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.product-tittle{
+    text-align: center;
+}

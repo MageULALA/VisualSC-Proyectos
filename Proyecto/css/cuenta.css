@@ -1,0 +1,132 @@
+nav{
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+.content-nav{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.content-nav-down{
+    background: rgba(100,100,100,0.25);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    z-index: 10000;
+}
+.content-nav ul{
+    display: flex;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    padding: 0!important;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.content-nav > ul:first-child{
+    width: auto;
+}
+.content-nav > ul:first-child > li > a > img{
+    width: 160px;
+}
+.content-nav > ul:last-child{
+    width: auto;
+}
+.content-nav > ul:last-child > div{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 50%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+.content-nav > ul:last-child > div > img{
+    width: 40px;
+}
+
+/* CONTENEDOR */
+main{
+    width: 85%;
+    margin: auto;
+}
+.title{
+    margin-top: 30px;
+}
+.title h1{
+    font-size: 24px;
+    padding-left: 9%;
+    color: white;
+}
+
+.content-account{
+    width: 100%;
+    position: relative;
+}
+.separator-100{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    border-top: 1px solid #a2a2a2;
+}
+.separator-80{
+    width: 94%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    border-top: 1px solid #a2a2a2;
+}
+.content-text{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.content-text > div{
+    width: 33%;
+}
+.content-text > div > h3{
+    font-size: 18px;
+    color: white;
+}
+.content-text > div > button{
+    width: auto;
+    height: auto;
+    background: transparent;
+    border: 1px solid silver;
+    font-size: 16px;
+    padding: 5px 26px;
+    color: silver;
+    text-align: center;
+    margin-top: 10px;
+}
+.content-text > div > h2{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.content-text > div > p{
+    margin-top: 20px;
+    font-size: 16px;
+    color: silver;
+}
+.content-text > div:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

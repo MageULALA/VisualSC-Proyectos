@@ -1,0 +1,28 @@
+#negrita{
+ font-weight: bold;   
+}
+
+#listaDisco{
+    list-style-type: disc;
+}
+
+#listaCirculo{
+    list-style-type: circle;
+}
+
+#listaCuadrada{
+    list-style-type: square;
+}
+
+#listaRom{
+    list-style-type: upper-roman;
+}
+
+#textoCursivo{
+    font-style: oblique;
+}
+
+#listaNone{
+    list-style-type: none;
+}
+

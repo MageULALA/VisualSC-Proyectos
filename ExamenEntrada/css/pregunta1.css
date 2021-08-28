@@ -1,0 +1,16 @@
+#negrita{
+    font-weight: bold;
+}
+
+#nivel1{
+    list-style-type: circle;
+}   
+
+#nivel2{
+    list-style-type: disc;
+}
+
+#nivel2-2{
+    list-style-type: upper-roman;
+}
+
